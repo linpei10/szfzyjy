@@ -1,0 +1,66 @@
+{% extends 'base_case.html' %}
+{% block content %}
+
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">案例展示
+                            <small class="hidden-xs">佛山市某城镇水环境仿真</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>案例介绍</h3>
+                        <p>城区地形模型总体面积154平方公里，最低海拔高度-6m，最高海拔为25m，最大海拔高度差31m。
+                            就整个城区来看，仿真城镇处海拔高度较低，局部区域低于海平面高度，在暴雨发生时雨水易在此处汇集，造成城市内涝。</p>
+                        <h3>案例数据</h3>
+                        <p></p>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>主要参数</th>
+                                <td>边界条件U、P、k、omega、nut</td>
+                            </tr>
+                            <tr>
+                                <th>仿真面积</th>
+                                <td>4.43㎞²</td>
+                            </tr>
+                            <tr>
+                                <th>网格数量</th>
+                                <td>1371万</td>
+                            </tr>
+                            <tr>
+                                <th>项目耗时</th>
+                                <td style="color: red">*****</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>结果展示</h3>
+                        <div class="case_pic">
+                            <p>网格划分</p>
+                            <img src="/static/img/case_water2/water2_pic1.png" alt="网格划分"/>
+                            <p>河床高程图</p>
+                            <img src="/static/img/case_water2/water2_pic2.png" alt="河床高程图">
+                            <p>视频演示</p>
+                            <video width="620" height="400" controls="controls">
+                                　
+                                <source src="/static/img/case_water2/water2_vid1.mp4" type="video/mp4"/>
+                                　
+                                <source src="/static/img/case_water2/water2_vid1.Ogg" type="video/ogg"/>
+                                　
+                                <source src="/static/img/case_water2/water2_vid1.webm" type="video/webm"/>
+                                　
+                                <object data="/static/img/case_water2/water2_vid1.mp4" width="620" height="400">
+                                    <embed src="/static/img/case_water2/water2_vid1.swf" width="620" height="400"/>
+                                    　
+                                </object>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

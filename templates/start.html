@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/start/">
+    {% csrf_token %}
+    <div style="position: fixed;top: 40%;left: 40%;font-size: 70px;color: #4cae4c">
+        未完待续.....<a style="font-size: 25px" href="/index">
+        <input name="url" style="display: none" type="text">
+        <input value="返回" style="font-size: 18px" type="submit">
+    </a>
+    </div>
+</form>
+</body>
+
+
+<script src="/static/js/jquery.min.js"></script>
+
+<script>
+    $(function () {
+        $("form input[name=url]").attr("value", document.referrer)
+    })
+
+</script>
+</html>

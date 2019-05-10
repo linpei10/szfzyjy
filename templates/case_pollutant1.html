@@ -1,0 +1,53 @@
+{% extends 'base_case.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">案例展示
+                            <small class="hidden-xs">某岛屿锅炉排放污染物浓度分布分析</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>案例介绍</h3>
+                        <p>
+                            结合该区域分布的约100个锅炉排放源，对该区域及周边的大气形成污染。在无风或弱风情况下，锅炉排放的堆积会对周边区域形成较强的污染。风速较大时，由于上游来流对锅炉固定排放有更大的稀释作用，同时地面附近大气边界层的掺混效应更强烈，通过更大范围、更短时间承载排放。通过无风(0.011m/s)和三级(4.4m/s)南风的排放颗粒物的仿真初步了解污染物的浓度分布情况，了解该研究区域不同位置污染程度的差异，为锅炉的分布及排放浓度的合理设计，建筑合理布局提供参考。</p>
+                        <h3>案例数据</h3>
+                        <p></p>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>主要参数</th>
+                                <td>边界条件U、P、T</td>
+                            </tr>
+                            <tr>
+                                <th>仿真面积</th>
+                                <td>4875㎞²</td>
+                            </tr>
+                            <tr>
+                                <th>网格数量</th>
+                                <td>39万</td>
+                            </tr>
+                            <tr>
+                                <th>项目耗时</th>
+                                <td style="color: red">*****</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>结果展示</h3>
+                        <div class="case_pic">
+                            <p>计算域</p>
+                            <img src="/static/img/case_pollutant1/pollutant1_pic1.png" alt="计算域"/>
+                            <p>速度分布</p>
+                            <img src="/static/img/case_pollutant1/pollutant1_pic2.png" alt="速度分布">
+                            <p>PM=1e-6等势面</p>
+                            <img src="/static/img/case_pollutant1/pollutant1_pic3.png" alt="PM=1e-6等势面">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% extends 'base_city.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">城市仿真
+                            <small class="hidden-xs">污染物模块</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>一、产品概述</h3>
+                        <p>
+                            污染物仿真模块主要用来计算城市中大气污染物和雾霾等在通风条件下的扩散，评估不同的地形、建筑排布、人工建筑物类型对空气环境的污染程度，并为城市提供控制污染程度的解决方案。模块基于CFD多组分扩散理论，可计算污染物随时间和空间的分布。模块操作简单，计算准确，是特别针对城市污染物类型、分布状况等特点开发的。</p>
+                        <h3>二、主要成员</h3>
+                        <p>
+                            城市人口增长和城市化进程加快导致雾霾频现，AQI爆表。相关部门采取措施治理雾霾：节能减排、限号、错峰生产……。将CFD理论同生产生活中的各种污染源信息相结合，对城市雾霾的分布进行计算分析，从而确定雾霾污染的主次因素，可为城市污染物浓度的达标治理提供解决方案。</p>
+                        <h3>三、适用单位</h3>
+                        <p>城市规划及设计单位、开展城市科学研究的高校和科研院所、城市环境部门。</p>
+                        <h3>四、产品功能</h3>
+                        <table class="table table-bordered table-hover">
+                            {#<thead>#}
+                            {#	<tr>#}
+                            {#	    <th>独立自主研发城市环境仿真模块</th>#}
+                            {#	</tr>#}
+                            {#</thead>#}
+                            <tbody>
+                            <tr>
+                                <td>1、室内空气净化仿真，分析空气净化器的合理布置</td>
+                            </tr>
+                            <tr>
+                                <td>2、生态公园仿真，评估公园对空气污染的净化效果</td>
+                            </tr>
+                            <tr>
+                                <td>3、划分排放责任，通过城市内污染源仿真和城市外邻近区域传输仿真，比较对城市空气污染的贡献量</td>
+                            </tr>
+                            <tr>
+                                <td>4、预测公共区域空气质量，考虑城市布局的影响</td>
+                            </tr>
+                            <tr>
+                                <td>5、突发事件(有毒气体泄漏等)的紧急疏散预判</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>五、操作步骤 </h3>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>建立模型</th>
+                                <td>提供建筑物三维模型图和地形图</td>
+                            </tr>
+                            <tr>
+                                <th>划分网格</th>
+                                <td>根据需要选粗、中、细三个等级网格并自动划分</td>
+                            </tr>
+                            <tr>
+                                <th>CFD设置</th>
+                                <td>输入少量边界条件数据，自动固化其它参数</td>
+                            </tr>
+                            <tr>
+                                <th>求解及后处理</th>
+                                <td>快速提供污染物浓度及分布随时间和空间的变化</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>六、简单示例 </h3>
+                        <p>几何模型</p>
+                        <img src="/static/img/city/pollutant/pollutant1.png" alt="几何模型"/>
+                        <p>计算网格</p>
+                        <img src="/static/img/city/pollutant/pollutant2.png" alt="计算网格"/>
+                        <p>流线图</p>
+                        <img src="/static/img/city/pollutant/pollutant3.png" alt="流线图"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

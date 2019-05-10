@@ -1,0 +1,65 @@
+{% extends 'base_case.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">案例展示
+                            <small class="hidden-xs">某电视台塔后流涡街的研究</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>案例介绍</h3>
+                        <p>
+                            一定速度的风绕流电视塔时，会出现卡门涡街。涡街的交替释放频率与塔的固有频率相重合时，会发生共振，使塔身激烈振动，严重时，造成塔身破裂。如果改变塔身的固有频率，使之与卡门涡街的释放频率错开，避免发生共振，则可防止建筑在一定风速下受到破坏。
+                            即使没有共振，长期由交变力也会引起建筑中的金属结构的疲劳断裂，所以必须考虑塔身的抗疲劳安全系数保持在一定范围内。</p>
+                        <h3>案例数据</h3>
+                        <p></p>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>主要参数</th>
+                                <td>边界条件U、P、k、epsilon、nut</td>
+                            </tr>
+                            <tr>
+                                <th>仿真面积</th>
+                                <td>0.2㎞²</td>
+                            </tr>
+                            <tr>
+                                <th>网格数量</th>
+                                <td>23760</td>
+                            </tr>
+                            <tr>
+                                <th>项目耗时</th>
+                                <td style="color: red">*****</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>结果展示</h3>
+                        <div class="case_pic">
+                            <p>网格划分</p>
+                            <img src="/static/img/case_wind1/wind1pic1.png" alt="网格划分"/>
+                            <p>速度分布</p>
+                            <img src="/static/img/case_wind1/wind1pic2.png" alt="速度分布">
+                            <p>视频演示</p>
+                            <video width="620" height="400" controls="controls">
+                                　
+                                <source src="/static/img/case_wind1/wind1_vid1.mp4" type="video/mp4"/>
+                                　
+                                <source src="/static/img/case_wind1/wind1_vid1.Ogg" type="video/ogg"/>
+                                　
+                                <source src="/static/img/case_wind1/wind1_vid1.webm" type="video/webm"/>
+                                　
+                                <object data="/static/img/case_wind1/wind1_vid1.mp4" width="620" height="400">
+                                    <embed src="/static/img/case_wind1/wind1_vid1.swf" width="620" height="400"/>
+                                    　
+                                </object>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

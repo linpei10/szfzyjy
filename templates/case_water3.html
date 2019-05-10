@@ -1,0 +1,63 @@
+{% extends 'base_case.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">案例展示
+                            <small class="hidden-xs">城市小规模降雨模型开发</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>案例介绍</h3>
+                        <p>该算例分别仿真区域内在1h内分别有10mm，25mm，50mm降雨落到计算区域时（区域内1h降雨平均深度分别为10mm，25mm，50mm），区域的内涝受灾情况与灾情发生过程。</p>
+                        <h3>案例数据</h3>
+                        <p></p>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>主要参数</th>
+                                <td>边界条件U、P、k、omega、alpha、nut</td>
+                            </tr>
+                            <tr>
+                                <th>仿真面积</th>
+                                <td>0.18㎞²</td>
+                            </tr>
+                            <tr>
+                                <th>网格数量</th>
+                                <td>49.8万</td>
+                            </tr>
+                            <tr>
+                                <th>项目耗时</th>
+                                <td style="color: red">*****</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>结果展示</h3>
+                        <div class="case_pic">
+                            <p>计算域</p>
+                            <img src="/static/img/case_water3/water3_pic1.png" alt="计算域"/>
+                            <p>1h后水深分布</p>
+                            <img src="/static/img/case_water3/water3_pic2.png" alt="速度分布">
+                            <p>视频演示</p>
+                            <video width="620" height="400" controls="controls">
+                                　
+                                <source src="/static/img/case_water3/water3_vid1.mp4" type="video/mp4"/>
+                                　
+                                <source src="/static/img/case_water3/water3_vid1.Ogg" type="video/ogg"/>
+                                　
+                                <source src="/static/img/case_water3/water3_vid1.webm" type="video/webm"/>
+                                　
+                                <object data="/static/img/case_water3/water3_vid1.mp4" width="620" height="400">
+                                    <embed src="/static/img/case_water3/water3_vid1.swf" width="620" height="400"/>
+                                    　
+                                </object>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base_case.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">案例展示
+                            <small class="hidden-xs">外涝紧急蓄水管路优化分析</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>案例介绍</h3>
+                        <p>
+                            洪涝灾害给国家和人民带来巨大的损失，如何减小洪涝灾害的影响，合理制定防灾减灾措施显得尤为重要。本算例模拟百年一遇洪水在某区域发生，仿真计算得到市区洪水淹没过程与各项洪灾数据，对城市不同区域受灾情况进行等级划分，并制定合理的紧急蓄水口排布方案，使得最终城市水量达到动态平衡，城市洪灾得到控制。</p>
+                        <h3>案例数据</h3>
+                        <p></p>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>主要参数</th>
+                                <td>边界条件U、P、k、epsilon、nut</td>
+                            </tr>
+                            <tr>
+                                <th>仿真面积</th>
+                                <td>0.2㎞²</td>
+                            </tr>
+                            <tr>
+                                <th>网格数量</th>
+                                <td>23760</td>
+                            </tr>
+                            <tr>
+                                <th>项目耗时</th>
+                                <td style="color: red">*****</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>结果展示</h3>
+                        <div class="case_pic">
+                            <p>模型展示</p>
+                            <video width="620" height="400" controls="controls">
+                                　
+                                <source src="/static/img/case_water1/water1_vid1.mp4" type="video/mp4"/>
+                                　
+                                <source src="/static/img/case_water1/water1_vid1.Ogg" type="video/ogg"/>
+                                　
+                                <source src="/static/img/case_water1/water1_vid1.webm" type="video/webm"/>
+                                　
+                                <object data="/static/img/case_water1/water1_vid1.mp4" width="620" height="400">
+                                    <embed src="/static/img/case_water1/water1_vid1.swf" width="620" height="400"/>
+                                    　
+                                </object>
+                            </video>
+                            <p>视频演示</p>
+                            <video width="620" height="400" controls="controls">
+                                　
+                                <source src="/static/img/case_water1/water1_vid2.mp4" type="video/mp4"/>
+                                　
+                                <source src="/static/img/case_water1/water1_vid2.Ogg" type="video/ogg"/>
+                                　
+                                <source src="/static/img/case_water1/water1_vid2.webm" type="video/webm"/>
+                                　
+                                <object data="/static/img/case_water1/water1_vid2.mp4" width="620" height="400">
+                                    <embed src="/static/img/case_water1/water1_vid2.swf" width="620" height="400"/>
+                                    　
+                                </object>
+                            </video>
+                            <p>不同蓄水口优化方案城市受灾状况对比</p>
+                            <img src="/static/img/case_water1/water1_pic1.png" alt="不同蓄水口优化方案城市受灾状况对比">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

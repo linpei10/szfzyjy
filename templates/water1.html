@@ -1,0 +1,76 @@
+{% extends 'base_city.html' %}
+{% block content %}
+    <div class="main-container">
+        <div class="container">
+            <div class="row main-container-row" style="position: relative">
+                <div class="col-xs-12 col-sm-12 usinfo-article">
+                    <div class="article-title">
+                        <h1 class="h2">城市仿真
+                            <small class="hidden-xs">水环境模块</small>
+                        </h1>
+                    </div>
+                    <div class="article-content">
+                        <h3>一、产品概述</h3>
+                        <p>
+                            水环境模块是我公司开发的核心模块，主要用来计算城市水环境，为城市防洪防涝提供解决方案，可预测洪涝灾害的影响范围和严重程度并指导城市紧急蓄水口的合理布局。该模块基于CFD气液两相流理论进行开发，可进行大规模并行计算，可以与水文学相结合改善城市水环境。</p>
+                        <h3>二、主要成员</h3>
+                        <p>
+                            我国水资源分配差异大，水灾频发，每年因洪水和城市内涝造成重大财产损失与人员伤亡。因此，通过仿真对有潜在溃坝危险的区域进行水灾风险预测并提供合理的解决方法具有重要的现实意义。此外，国家发改委和住建部要求各省市做好城市排水防涝补短板建设，构建海绵城市，确保易涝点整治后达到国家标准要求。水环境仿真模块可以结合城市数字化综合信息管理平台，提前预判灾情和辅助决策，提高城市排水防涝运行管理水平。</p>
+                        <h3>三、适用单位</h3>
+                        <p>城市规划单位、建筑设计单位、开展城市科学研究的高校和科研院所、城市防汛抗旱指挥部门。</p>
+                        <h3>四、产品功能</h3>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <td>1、洪水仿真，重现洪水决堤场景</td>
+                            </tr>
+                            <tr>
+                                <td>2、暴雨仿真，预测特大暴雨来袭时城市雨水聚集区</td>
+                            </tr>
+                            <tr>
+                                <td>3、水体监测，预测城市水体运行周期，改善死水区</td>
+                            </tr>
+                            <tr>
+                                <td>4、海绵城市，预测城市水平衡性，评价防洪涝效果</td>
+                            </tr>
+                            <tr>
+                                <td>5、海啸，预测海啸对城市的影响区域和严重程度</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>五、操作步骤 </h3>
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                            <tr>
+                                <th>建立模型</th>
+                                <td>提供建筑三维模型图和地形图、提取河道模型图</td>
+                            </tr>
+                            <tr>
+                                <th>划分网格</th>
+                                <td>根据需要选粗、中、细三个等级网格并自动划分</td>
+                            </tr>
+                            <tr>
+                                <th>CFD设置</th>
+                                <td>输入少量边界条件数据，自动固化其它参数</td>
+                            </tr>
+                            <tr>
+                                <th>求解及后处理</th>
+                                <td>快速生成流场速度图、水深图和动画并生成报告</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <h3>六、简单示例 </h3>
+                        <div style="text-align: center">
+                            <p>几何模型</p>
+                            <img src="/static/img/city/water/water1.png" alt="几何模型"/>
+                            <p>计算网格</p>
+                            <img src="/static/img/city/water/water2.png" alt="计算网格"/>
+                            <p>速度分布图</p>
+                            <img src="/static/img/city/water/water3.png" alt="流线图"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

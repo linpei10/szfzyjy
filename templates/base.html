@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://www.szfzyjy.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="renderer" content="webkit">
+    <!-- 目前仅限360急速浏览 webkit:急速  ie-comp:ie兼容模式   ie-stand: ie标准模式 -->
+    <title>数字仿真研究院</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico"/>
+    <!-- Bootstrap中文字体版 -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- 自定义样式 -->
+    <link href="/static/css/common.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="JavaScript" type='text/javascript' src='/static/js/jquery.min.js'></script>
+    <script language="JavaScript" type='text/javascript' src='/static/js/bootstrap.min.js'></script>
+    <script language="JavaScript" type='text/javascript' src='/static/js/common.js'></script>
+    <script language="JavaScript" type='text/javascript' src='/static/js/countUp.min.js'></script>
+    <script language="JavaScript" type='text/javascript' src='/static/js/v.js'></script>
+
+
+    <!--<script type="text/javascript" src="http://p.qiao.baidu.com/cps/site/poll?cb=jsonp_bridge_1553499814267_4275373610231028&amp;l=1&amp;v=1080296490010659290&amp;s=10659290&amp;e=20073939&amp;dev=0&amp;auth=%7B%22anonym%22%3A0%2C%22key%22%3A%226813929166849568281sovq8461510469%22%2C%22sn%22%3A%22728093692%22%2C%22id%22%3A%221080296490010659290%22%2C%22from%22%3A4%2C%22token%22%3A%22bridge%22%7D&amp;_time=1553499814267" id="id_jsonp_bridge_1553499814267_4275373610231028" charset="utf-8"></script>-->
+</head>
+
+<body>
+
+
+<!-- 整站通用的头部及导航条 -->
+<div id="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="padding:0 0 0 0;" href="/index"><img alt="Brand" class="logo"
+                                                                                    src="/static/img/home/logo.jpg"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            {% block menu %}
+
+            {% endblock %}
+
+            <!-- /.navbar-collapse -->
+        </div>
+        <div class="subbit">
+            <input type="text" placeholder="搜索">
+            <div class="login">
+                {% if request.session.name %}
+                    <a href="javascript:void 0">{{ request.session.name }}</a><span>/</span><a href="/logout">退出</a>
+                {% else %}
+                    <a id="login" href="javascript:void 0">登录</a><span>/</span>
+                    <a id="sign_up" href="javascript:void 0">注册</a>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- /.container-fluid -->
+    </nav>
+</div>
+<!-- 整站通用的头部及导航条 -->
+
+{% block content %}
+
+
+{% endblock %}
+
+
+<!-- 我们的客户 -->
+<div class="index-row our-client">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 main-title">
+                <h2 class="h1">我们的合作伙伴</h2>
+
+                <p class="line line-big"></p>
+
+                <h2>
+                    <small>多年来的合作伙伴</small>
+                </h2>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client1.jpg" alt="东方道迩">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client2.jpg" alt="微软">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client3.jpg" alt="日立">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client4.jpg" alt="IBM">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client5.jpg" alt="华为">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client6.jpg" alt="中兴">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client7.jpg" alt="百度">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client8.jpg" alt="经济日报">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client9.jpg" alt="软通动力">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client10.jpg" alt="现代快报">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client11.jpg" alt="中天瑞合">
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2 our-client-item">
+                <div class="our-client-logo">
+                    <img class="img-responsive center-block" src="/static/img/home/client12.jpg" alt="中国航天">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 我们的客户 -->
+
+<!-- 数字滚动插件 -->
+<script type="text/javascript" src="/static/js/countUp.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /**通用-banner大图自定义缩放**/
+        let zoomWidth = 992; //缩放阀值992px, 即所有小于992px的视口都会对原图进行缩放, 只是缩放比例不同
+        let maxWidth = 2000; //最大宽度1920px
+        let ratio = 1; //缩放比例
+        let viewWidth = window.innerWidth; // 视口宽度
+        let zoomSlider = function () {
+            if (viewWidth < 768) { //当视口小于768时(移动端), 按992比例缩放
+                ratio = viewWidth / zoomWidth; //视口宽度除以阀值, 计算缩放比例
+            } else if (viewWidth < zoomWidth) { //当视口界于768与992之间时, bootstrap主宽度为750, 这区间picture缩放比例固定.
+                ratio = zoomWidth / (zoomWidth + (zoomWidth - 750));
+            } else { // PC端不缩放
+                ratio = 1;
+            }
+            // ratio = viewWidth / zoomWidth; //视口宽度除以阀值, 计算缩放比例
+            // ratio = (ratio<=1) ? ratio : 1; //如果比例值大于1, 说明视口宽度高于阀值, 则不进行任何缩放
+            let width = maxWidth * ratio; //缩放宽度
+            $(".my-slide img").each(function () {
+                $(this).css({
+                    "width": width,
+                    "max-width": width,
+                    "margin-left": -(width - viewWidth) / 2
+                }); //picture自适应居中, picture宽度与视口宽度差除以2的值, 设置为负margin
+            });
+        }
+        /**通用-我们的成绩等数字滚动特效**/
+        let numOptions = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+            prefix: '',
+            suffix: ''
+        }
+        // let numGroup = new Array(
+        //         new CountUp("sum-apply", 0, 18397, 0, 2.5, numOptions),
+        //         new CountUp("sum-rate", 0, 98.8, 1, 2.5, numOptions),
+        //         new CountUp("sum-urgent", 0, 3273, 0, 2.5, numOptions),
+        //         new CountUp("urgent-rate", 0, 100, 0, 2.5, numOptions)
+        // );
+        let runNumber = function () {
+            $('.run-number').each(function () {
+                let oTop = $(this).offset().top;
+                let sTop = $(window).scrollTop();
+                let oHeight = $(this).height();
+                let oIndex = $(this).index('.run-number');
+                //console.log(oTop+'\r\n'+sTop+'\r\n'+oHeight+'\r\n'+$(window).height());
+                if (oTop >= sTop && (oTop + (oHeight / 2)) it(sTop + $(window).height())
+            )
+                {
+                    numGroup[oIndex].start();
+                    //console.log('元素'+$(this).index('.run-number')+'可见');
+                }
+            else
+                {
+                    //console.log('元素'+$(this).index('.run-number')+'不可见');
+                }
+            });
+        };
+
+        zoomSlider(); //页面加载时初始化并检查一次.
+        runNumber(); //页面加载时判断一次
+        /**视口发生变化时的事件**/
+        $(window).resize(function () {
+            viewWidth = window.innerWidth; // 重置视口宽度
+            zoomSlider();//判断是否绽放banner
+            runNumber();//判断是否执行动画
+        });
+        /**滚动事件**/
+        $(window).scroll(function () {
+            runNumber();
+        });
+
+        //首页-我们的服务
+        $('.card-item').each(function () {
+            $(this).mouseover(function () {
+                $(this).addClass('card-active');
+                $(this).siblings().removeClass('card-active');
+                $(this).find(".btn").addClass('btn-outline-inverse').removeClass('btn-outline-blue');
+                $(this).siblings().find(".btn").addClass('btn-outline-blue').removeClass('btn-outline-inverse');
+            });
+        });
+
+    });
+</script>
+
+<!-- 整站通用的尾部 -->
+<div id="sidebar-bg" style="display: none;"></div>
+<!-- 立即咨询 -->
+<div class="contact-banner">
+    <canvas id="waves" class="waves" width="2664" height="257" style="width: 2664.2px; height: 257px;"></canvas>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 contact-banner-box">
+                <h2 class="h1">更多疑问 全面解答</h2>
+                <h4>城市仿真专家为您解决所有疑惑 </h4>
+                <a href="/start" class="btn btn-outline-inverse btn-lg web-chat">免费咨询</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 立即咨询 -->
+<!-- 通用页脚 -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>常用工具</h4>
+                    <ul>
+                        <li><a href="/start" target="_blank">在线仿真</a></li>
+                        <li><a href="/case">案例展示</a></li>
+                        <li><a href="/download">资料下载</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>快捷链接</h4>
+                    <ul>
+                        <li><a href="/news">最新资讯</a></li>
+                        <li><a href="/start">培训简介</a></li>
+                        <li><a href="/start">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-list">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="/start">关于我们</a></li>
+                        <li><a href="/start">服务协议</a></li>
+                        <li><a href="/start">收藏本站</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-2 footer-item">
+                <div class="footer-wechat">
+                    <img alt="微信" class="img-responsive" src="/static/img/home/wechat.jpg">
+                    <p style="margin-bottom: 0">微信号:</p>
+                    <p>smartcitylab</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 footer-item footer-item-last">
+                <div class="footer-contact">
+                    <div style="width: 290px;height: 40px;color: #fff;font-size: 20px">电话:010-68010308</div>
+                    <div style="width: 290px;height: 40px;color: #fff;font-size: 20px">邮箱:cdatasim@scitylab.com</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>Copyright © Brimrose Corporation of National Smart City Joint Lab 版权所有复制必究 </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 通用页脚 -->
+<!-- 手机端底部 -->
+<div id="mob-bottom" class="visible-xs-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="/start">
+                    <img alt="图片" class="img-responsive center-block" src="/static/img/index/mob-footer-phone.png">
+                    <span>电话咨询</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="/start">
+                    <img alt="图片" class="img-responsive center-block" src="/static/img/index/mob-footer-mob.png">
+                    <span>紧急电话</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="/start">
+                    <img alt="图片" class="img-responsive center-block web-chat"
+                         src="/static/img/index/mob-footer-chat.png">
+                    <span>在线咨询</span>
+                </a>
+            </div>
+            <div class="col-xs-3 mob-bottom-item">
+                <a href="/start">
+                    <img alt="图片" class="img-responsive center-block" src="/static/img/index/mob-footer-msm.png">
+                    <span>短信咨询</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 手机端底部 -->
+<!-- 整站通用的尾部 -->
+
+
+<!-- 登录 -->
+<div class="background"></div>
+<div class="login_page">
+
+    {#        {% csrf_token %}#}
+    <h3>欢迎登录！</h3>
+    <span class="msg1"></span>
+    <div class="login_list">
+        <form action="">
+            <ol>
+                <li><input name="username" type="text" placeholder="邮箱/手机号"/></li>
+                <li><input name="password" type="password" placeholder="请输入登录密码"/></li>
+
+            </ol>
+        </form>
+        <ol>
+            <li><input class="button sign_in" type="submit" value="登录"/><a style="margin-right: -200px"
+                                                                           href="javascript:void 0">忘记密码</a></li>
+        </ol>
+    </div>
+
+    <p style="margin-top: 50px">还没有账号？<a id="sign_up_1" href="javascript:void 0">注册</a>一个吧</p>
+    <p><a class="exit" href="javascript:void 0">暂不登录</a></p>
+</div>
+
+<!-- 登录 -->
+<!-- 注册 -->
+<div class="signup_page">
+    {#    <form action="{% url 'home' %}" method="post">#}
+
+    <h3>欢迎注册！</h3>
+    <span class="msg2"></span>
+    <div class="login_list">
+        <form action="">
+            <ol>
+                <li><input name="set_username" type="text" placeholder="请输入您的邮箱地址"/></li>
+                <li><input name="code" code="" style="width: 35%" type="text" placeholder="验证码"/><input id="btn" value="免费获取验证码" type="button" style="width: 65%;" class="button"></li>
+                <li><input name="set_password" type="password" placeholder="请设置您的密码"/></li>
+                <li><input name="set_password1" type="password" placeholder="再次输入您的密码"/></li>
+                <li><input name="id" type="text" placeholder="请设置您的昵称"/></li>
+            </ol>
+        </form>
+        <ol>
+            <li><input class="button sign_up" type="button" value="注册"/></li>
+        </ol>
+    </div>
+
+    <p style="margin-top: 50px">已有账号？请<a id="login_1" href="javascript:void 0">登录</a></p>
+    <p><a class="exit" href="javascript:void 0">暂不注册</a></p>
+</div>
+<!-- 注册 -->
+
+<script type="text/javascript" src="/static/js/common.js"></script>
+<script>
+    $username = $("[name='username']");
+    $password = $("[name='password']");
+    $set_username = $("[name='set_username']");
+    $set_password = $("[name='set_password']");
+    $set_password1 = $("[name='set_password1']");
+    $code = $("[name='code']");
+    $sign_up = $(".sign_up");
+    $sign_in = $(".sign_in");
+    $msg1 = $('.msg1');
+    $msg2 = $('.msg2');
+    $("#btn").attr("disabled",true);
+
+    // 验证两次密码输入是否一致并检验密码是否过于简单
+    $set_password.blur(function () {
+        if (/^[0-9a-zA-Z_]{6,15}$/.test($(this).val())) {
+            $set_password1.attr("disabled",false);
+            $msg2.html("");
+        }else {
+            $set_password1.attr("disabled",true);
+            if ($msg2.html().length > 0){
+                return false
+            } else {
+                $msg2.html("密码过于简单").css("color","red");
+            }
+        }
+
+    });
+    $set_password1.blur(function () {
+       if ($(this).val() === $set_password.val())  {
+           $sign_up.attr("disabled",false);
+           $msg2.html("")
+       }else {
+           if ($msg2.html().length > 0){
+                return false
+            } else {
+                $msg2.html("两次输入的密码不一致").css("color","red");
+            }
+           $sign_up.attr("disabled",true);
+       }
+    });
+
+
+
+    // 验证邮箱格式
+    $sign_up.attr("disabled",true);
+    $set_username.blur(function () {
+            if (/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test($(this).val()) === false){
+                if ($msg2.html().length > 0){
+                        return false
+                    } else {
+                        $msg2.html("邮箱格式不正确，请重新填写").css('color', 'red');
+                    }
+                $('#btn').attr("disabled",true);
+                $sign_up.attr("disabled",true);
+            }else {
+                $('#btn').attr("disabled",false);
+                $sign_up.attr("disabled",false);
+            }
+        });
+
+    function settime(obj) { //发送验证码倒计时
+            if (countdown === 0) {
+                obj.attr('disabled',false);
+                obj.val("免费获取验证码");
+                countdown = 120;
+                return;
+            } else {
+                obj.attr('disabled',true);
+                obj.val("重新发送(" + countdown + ")");
+                countdown--;
+            }
+            setTimeout(function() {
+                settime(obj) }
+                ,1000)
+            }
+        let countdown=120;
+
+           $("#btn").click(function () {
+               let obj = $(this);
+               settime(obj);
+               $.ajax({
+                   url:"/index/",
+                   data: {
+                   username: $set_username.val(),
+                },
+                   type:"POST",
+                   success: function (data) {
+                       data = JSON.parse(data);
+                       $code.attr("code",data['code'])
+                   }
+               })
+           });
+
+    $(function () {
+
+
+    // ajax 提交
+        $sign_in.click(function () {
+            $.ajax({
+                url: '/index/',
+                data: {
+                    username: $username.val(),
+                    password: $password.val(),
+                    post_name: "sign_in",
+                },
+                type: "POST",
+                success: function (data) {
+                    //反序列化
+                    data = JSON.parse(data);
+                    if (data['status'] === true) {
+                        // 登录成功跳转到个人主页
+                        // window.location.href = window.location.pathname;
+                        // 刷新当前页面
+                        window.location.reload();
+
+                    } else {
+                        //登录失败显示错误信息
+                        if ($msg1.html().length > 0){
+                        return false
+                        } else {
+                        $msg1.html(data['msg']).css('color', 'red');
+                        }
+
+                    }
+
+                }
+            })
+        });
+
+        $set_username.blur(function () {
+            $.ajax({
+                url: '/index/',
+                data: {
+                    username: $set_username.val(),
+                    post_name: "sign_up",
+                },
+                type: "POST",
+                success: function (data) {
+                    //反序列化
+                    data = JSON.parse(data);
+                    if (data['status'] === true) {
+                        $("#btn").attr("disabled",false);
+                        return false
+                    } else {
+                        if ($msg2.html().length > 0){
+                        return false
+                        } else {
+                            $("#btn").val("免费获取验证码").attr("disabled",true);
+                            $msg2.html(data['msg']).css('color', 'red');
+                        }
+
+                    }
+                }
+            })
+        });
+
+        $sign_up.click(function () {
+
+            if ($code.val() === $code.attr('code')) {
+                $msg2.html("");
+                $.ajax({
+                url: '/index/',
+                data: {
+                    username: $set_username.val(),
+                    password: $set_password.val(),
+                    name: $("[name='id']").val(),
+                    code:$code.val(),
+                    post_name: "sign_up",
+                },
+                type: "POST",
+                success: function (data) {
+                    //反序列化
+                    data = JSON.parse(data);
+                    if (data['status'] === true) {
+                        // window.location.href = window.location.pathname;
+                        $msg2.html(data['msg']).css('color', 'green');
+                        $(".login_list form ol li input").val("")
+                    } else {
+                        //注册失败显示错误信息
+                        $(".login_list form ol li input:not([name=set_username])").val("");
+                        $("#btn").val("免费获取验证码");
+                        if ($msg2.html().length > 0){
+                        return false
+                        } else {
+                        $msg2.html(data['msg']).css('color', 'red');
+                        }
+                    }
+                }
+            })
+            }else {
+                if ($msg2.html().length > 0){
+                        return false
+                        } else {
+                        $msg2.html("验证码错误，请重填写。").css('color', 'red');
+                        }
+            }
+
+
+        });
+    });
+
+    $sign_up.hover(function () {
+            each();
+        });
+
+    // 键盘回车提交注册和登录
+    $(document).keyup(function (e) {
+        if (e.keyCode === 13){
+            if ($sign_in.is(":visible")){
+                $sign_in.trigger("click")
+            } else {
+            each();
+            $sign_up.trigger("click")
+            }
+        }
+    });
+    function each (){
+            $(".signup_page .login_list form ol li input:not(.button)").each(function () {
+                if ($(this).val().length > 0) {
+                    $sign_up.attr("disabled",false)
+                } else {
+                    $("#btn").val("免费获取验证码");
+                    $sign_up.attr("disabled",true);
+                    if ($msg2.html().length > 0){
+                        return false
+                    } else {
+                        $msg2.html("请将信息填写完整后注册").css("color","red");
+                    }
+                    return false
+                }
+            });
+        }
+    $set_username.focus(function () {
+       $msg2.html("");
+    });
+
+</script>
+
+</body>
+
+</html>
+
+

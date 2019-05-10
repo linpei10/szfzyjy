@@ -1,0 +1,338 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/index">首页 <span class="sr-only">(current)</span></a>
+                <p class="line-top hidden-xs"></p></li>
+            <li><a href="/dsri">仿真研究院</a></li>
+            <li><a href="/city">城市仿真</a></li>
+            <li><a href="/case">案例展示</a></li>
+            <li><a href="/news">新闻中心</a></li>
+            <li><a href="/download">资料下载</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- 全屏轮播图 -->
+    <div id="carousel-example-generic" class="wheel carousel slide my-slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item_banner item">
+                <a target="_blank" href="/start">
+                    <img src="/static/img/home/banner1.jpg" alt="数字仿真研究院" style="width: 100%;height: 100%">
+                </a>
+            </div>
+            <div class="item_banner item">
+                <a target="_blank" href="/start">
+                    <img src="/static/img/home/banner2.jpg" alt="数字仿真研究院" style="width: 100%;height: 100%">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 全屏轮播图 -->
+    <!-- 我们的成绩 -->
+    <div class="index-row our-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-title">
+                    <h2 class="h1">我们的成绩</h2>
+
+                    <p class="line line-big"></p>
+
+                    <h2>
+                        <small>2018年仿真面积</small>
+                    </h2>
+                </div>
+                <div class="col-sm-3 our-data-item sum-apply">
+                    <div class="number-wrapper">
+                    <span style="color: #919191;font-size: 30px" id="sum-apply" class="run-number" data-to="240">约<span
+                            style="color: #0ba1e4;font-size: 40px">300</span> ㎞²</span>
+                    </div>
+                    <h4 class="title">风环境仿真面积</h4>
+                </div>
+                <div class="col-sm-3 our-data-item sum-rate">
+                    <div class="number-wrapper">
+                    <span style="color: #919191;font-size: 30px" id="sum-apply" class="run-number" data-to="240">约<span
+                            style="color: #0ba1e4;font-size: 40px">100</span> ㎞²</span>
+                    </div>
+                    <h4 class="title">水环境仿真面积</h4>
+                </div>
+                <div class="col-sm-3 our-data-item sum-urgent">
+                    <div class="number-wrapper">
+                    <span style="color: #919191;font-size: 30px" id="sum-apply" class="run-number" data-to="240">约<span
+                            style="color: #0ba1e4;font-size: 40px">100</span> ㎞²</span>
+                    </div>
+                    <h4 class="title">污染物仿真面积</h4>
+                </div>
+                <div class="col-sm-3 our-data-item urgent-rate">
+                    <div class="number-wrapper">
+                        <span id="urgent-rate" class="run-number" data-to="240">......</span>
+                    </div>
+                    <h4 class="title"></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我们的成绩 -->
+    <!-- 我们的优势 -->
+    <div class="index-row our-whyus">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-title">
+                    <h2 class="h1">我们的优势</h2>
+
+                    <p class="line line-big"></p>
+
+                    <h2>
+                        <small>每平方公里仿真都全力以赴，每份仿真数据都专业可靠</small>
+                    </h2>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our-whyus-item">
+                    <span class="glyphicon " aria-hidden="true">
+                        <img alt="新闻" src="/static/img/index/advan1.jpg" style="width: 150px;height: 110px">
+                    </span>
+
+                        <h3 class="title">多年的经验积累</h3>
+                        <div class="cont_p">
+                            <p>数字仿真研究院核心成员有长达20年的CFD行业从业经验，参与多款CFD、绿色建筑专业软件研发。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon " aria-hidden="true">
+                        <img alt="新闻" src="/static/img/index/advan2.jpg" style="width: 150px;height: 110px">
+                    </span>
+
+                        <h3 class="title">全方位城市服务</h3>
+                        <div class="cont_p">
+                            <p>致力基于CFD的城市风环境、水环境、污染物扩散的仿真，目标建立包含交通、人口等内容的城市全要素仿真。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon " aria-hidden="true">
+                        <img alt="新闻" src="/static/img/index/advan3.jpg" style="width: 150px;height: 110px">
+                    </span>
+
+                        <h3 class="title">自主知识产权</h3>
+                        <div class="cont_p">
+                            <p>拥有SS-AE风环境模拟软件、SS-WE水环境模拟软件、SS-PE城市污染物环境模拟软件多款软件著作权。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="our-whyus-item">
+                    <span style="font-size: 80px;" class="glyphicon " aria-hidden="true">
+                        <img alt="新闻" src="/static/img/index/advan4.jpg" style="width: 150px;height: 110px">
+                    </span>
+
+                        <h3 class="title">领先的仿真面积</h3>
+                        <div class="cont_p">
+                            <p>已成功实施的中国某城市整体的仿真，仿真区域面积约500平方公里，所含建筑数目约6万栋。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我们的优势 -->
+    <!-- 我们的服务 -->
+    <div class="index-row our-service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-title">
+                    <h2 class="h1">我们的服务</h2>
+
+                    <p class="line line-big"></p>
+
+                    <h2>
+                        <small>城市环境仿真与计算软件培训</small>
+                    </h2>
+                </div>
+                <div class="col-sm-12 text-center card-box">
+                    <ul class="card-area">
+                        <li class="card-item card-active">
+                            <div class="card-title">
+                                <h4>城市风环境仿真</h4>
+
+                                <p>台风灾害避难</p>
+                                <p>绿建标准评价</p>
+                                <p>室内空气龄预估</p>
+                                <p>风电场选址规划</p>
+
+                            </div>
+                            <div class="card-content">
+
+                                <a href="/city/wind1">查看详情</a>
+
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-title">
+                                <h4>城市水环境仿真</h4>
+
+                                <p>排水系统规划</p>
+                                <p>洪水灾害评估</p>
+                                <p>智慧水务</p>
+                                <p>海绵城市设计咨询</p>
+                            </div>
+                            <div class="card-content">
+
+                                <a href="/city/water1">查看详情</a>
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-title">
+                                <h4>城市污染物仿真</h4>
+
+                                <p>雾霾扩散与治理</p>
+                                <p>室内空气净化仿真</p>
+                                <p>生态公园仿真</p>
+                                <p>污染物跨区域传输仿真</p>
+                            </div>
+                            <div class="card-content">
+
+                                <a href="/city/pollutant1">查看详情</a>
+                            </div>
+                        </li>
+                        <li class="card-item">
+                            <div class="card-title">
+                                <h4>环境仿真培训</h4>
+
+                                <p>计算软件培训</p>
+                            </div>
+                            <div class="card-content">
+
+                                <a href="/start">查看详情</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-sm-12 text-center">
+                    <a href="/start">查看更多服务</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我们的服务 -->
+
+    <!-- 最新资讯 -->
+    <div class="index-row our-news">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 main-title">
+                    <h2 class="h1">智慧城市最新资讯</h2>
+
+                    <p class="line line-big"></p>
+
+                    <h2>
+                        <small>智慧城市最前沿的政策与动态</small>
+                    </h2>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media our-news-item">
+                        <div class="media-left">
+                            <a class="thumbnail" href="/news/108.html">
+                                <img class="media-object" src="/static/img/index/news1.jpg" alt="年度盘点|智慧城市2018回顾与展望">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="/news/108.html"><h4 class="media-heading">年度盘点|智慧城市2018回顾与展望</h4></a>
+                            <div class="dynamic-li">
+                                <span>时间：2019-02-27 </span>
+                            </div>
+                            <p>
+                                2018年，智慧城市建设已经十年，中国已成为全球最大智慧城市实施国。中国城市科学研究会智慧城市联合实验室在对2015、2016、2017年进行盘点后，再次推出智慧城市2018年度盘点！</p>
+                            <div class="dynamic-li">
+                                <a href="/news/108.html">[详细]</a>
+                                <span>作者：政研室 <span class="hidden-xs">scitylab.org</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media our-news-item">
+                        <div class="media-left">
+                            <a class="thumbnail" href="/news/107.html">
+                                <img class="media-object" src="/static/img/index/news2.jpg"
+                                     alt="标准|IEC智慧城市系统委员会WG2工作会议在印度召开">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="/news/107.html"><h4 class="media-heading">标准|IEC智慧城市系统委员会WG2工作会议在印度召开</h4></a>
+                            <div class="dynamic-li">
+                                <span>时间：2019-01-14 </span>
+                            </div>
+                            <p>2018年12月9日—12月14日，国际电工委员会智慧城市系统委员会（International Electrotechnical Commission SyC Smart
+                                Cities
+                                Committee）第四次全会在印度城市瓦拉纳西召开。</p>
+                            <div class="dynamic-li">
+                                <a href="/news/107.html">[详细]</a>
+                                <span>作者：政研室 <span class="hidden-xs">scitylab.org</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media our-news-item">
+                        <div class="media-left">
+                            <a class="thumbnail" href="/news/106.html">
+                                <img class="media-object" src="/static/img/index/news3.jpg" alt="国际标准化组织智慧城市试点开启新一轮遴选">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="/news/106.html"><h4 class="media-heading">国际标准化组织智慧城市试点开启新一轮遴选</h4></a>
+                            <div class="dynamic-li">
+                                <span>时间：2019-01-10 </span>
+                            </div>
+                            <p>ISO智慧城市试点的城市征集工作仍在继续，目前该试点项目推进顺利，中国首批启动的试点城市已逐步进入专家调研和项目设计实施阶段。 </p>
+                            <div class="dynamic-li">
+                                <a href="/news/106.html">[详细]</a>
+                                <span>作者：政研室 <span class="hidden-xs">scitylab.org</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="media our-news-item">
+                        <div class="media-left">
+                            <a class="thumbnail" href="/news/105.html">
+                                <img class="media-object" src="/static/img/index/news4.jpg"
+                                     alt="大数据应用城市准备好了吗？城市仿真试点征集中">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="/news/105.html"><h4 class="media-heading">大数据应用城市准备好了吗？城市仿真试点征集中</h4></a>
+                            <div class="dynamic-li">
+                                <span>时间：2019-01-10 </span>
+                            </div>
+                            <p>2018年12月18日，由中国城市科学研究会智慧城市联合实验室发起的“城市仿真”项目举行启动仪式。城市仿真风环境仿真项目将在汶川、佛山南海区等城市率先示范。</p>
+                            <div class="dynamic-li">
+                                <a href="/news/105.html">[详细]</a>
+                                <span>作者：政研室 <span class="hidden-xs">scitylab.org</span> </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 our-news-more">
+                    <h2>
+                        <small><a href="/news">更多资讯&gt;&gt;&gt;</a></small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 最新资讯 -->
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'base_city.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="breadcrumb" style="margin-top: 10px; margin-bottom: 10px;">
+                    <li><a href="http://www.clantrip.com/">首页</a></li>
+                    <li>
+                        <a href="http://www.clantrip.com/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=9">城市仿真</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="urgent-row urgent-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h2><a href="/city/wind1">风环境仿真</a></h2>
+                    <p class="line line-big"></p>
+                    <p>主要用于计算室内外自然通风，为建筑布局规划设计提供可靠的流场分析数据，该模块基于计算流体力学理论，可模拟空气的定常与非定常流动，与城市规划结合以改善城市风环境。</p>
+                </div>
+                <div class="col-xs-4">
+                    <img alt="风环境" src="/static/img/city/sellpoint1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="urgent-row urgent-even">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img alt="水环境" src="/static/img/city/sellpoint2.jpg">
+                </div>
+                <div class="col-xs-8">
+                    <h2><a href="/city/water1">水环境仿真</a></h2>
+                    <p class="line line-big"></p>
+                    <p>主要用来计算城市水环境，为城市防洪防涝提供解决方案，可预测洪涝灾害的影响范围和严重程度并指导城市紧急蓄水口的合理布局，可以与水文学相结合改善城市水环境。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="urgent-row urgent-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h2><a href="/city/pollutant1">污染物仿真</a></h2>
+                    <p class="line line-big"></p>
+                    <p>主要用来计算城市中大气污染物和雾霾等在通风条件下的扩散，评估不同地形、建筑排布、人工建筑物类型对空气环境的污染程度，并为城市提供控制污染程度的解决方案。</p>
+                </div>
+                <div class="col-xs-4">
+                    <img alt="污染物" src="/static/img/city/sellpoint3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#<div class="urgent-row urgent-even">#}
+    {#    <div class="container">#}
+    {#        <div class="row">#}
+    {#            <div class="col-xs-4">#}
+    {#                <img alt="风环境" src="/static/img/background/sellpoint1.jpg">#}
+    {#            </div>#}
+    {#            <div class="col-xs-8">#}
+    {#                <h2>待使用</h2>#}
+    {#                <p class="line line-big"></p>#}
+    {#                <p>待使用</p>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+    {#</div>#}
+    <!-- 城市环境仿真描述 -->
+
+    <!-- 仿真流程 -->
+    <div class="urgent-row urgent-step">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>仿真流程: 获取仿真3d模型&gt;&gt;&gt;划分网格&gt;&gt;&gt;设置计算条件&gt;&gt;&gt;开始计算&gt;&gt;&gt;获得计算结果并评价</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 仿真流程 -->
+
+    <!-- 仿真评价 -->
+{#    <div class="urgent-row urgent-chat">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-sm-12">#}
+{#                    <h1>仿真评价</h1>#}
+{#                    <p class="line line-big"></p>#}
+{#                    <p>**************</p>#}
+{#                    <ol>#}
+{#                        <li>*********************</li>#}
+{#                        <li>*********************</li>#}
+{#                        <li>*********************</li>#}
+{#                        <li>*********************</li>#}
+{#                        <li>*********************</li>#}
+{#                    </ol>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+    <!-- 仿真评价 -->
+{% endblock %}

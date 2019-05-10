@@ -1,0 +1,79 @@
+{% extends 'base_city.html' %}
+{% block content %}
+<div class="main-container">
+    <div class="container">
+        <div class="row main-container-row" style="position: relative">
+            <div class="col-xs-12 col-sm-12 usinfo-article">
+                <div class="article-title">
+                    <h1 class="h2">城市仿真
+                        <small class="hidden-xs">风环境模块</small>
+                    </h1>
+                </div>
+                <div class="article-content">
+                    <h3>一、产品概述</h3>
+                    <p>
+                        风环境模块是最早开发的模块，主要用来计算室内外自然通风，为建筑布局及规划设计提供可靠的流场分析数据，该模块基于计算流体力学（CFD）理论，可模拟空气的定常与非定常流动，只需要提供模型和关键参数，即可完成建模、网格划分、计算域边界条件设定、流场计算、后处理。模块流程化操作，计算准确，可以与城市规划相结合以改善城市风环境。</p>
+                    <h3>二、主要成员</h3>
+                    <p>
+                        绿色建筑在规划设计之初就必须量化建筑通风，以利用充分利用自然风来达到节能减排的目的。在《绿色建筑评价标准》中涉及26条风环境的条文，因此绿建风环境的仿真技术发展迅速。但传统的计算忽略了风在到达目标建筑前复杂的地形对于空气流动的影响，因此边界条件合理性存疑，模拟的可信性不高。另外，在城市季节风和台风灾害防治方面国内鲜有相关仿真技术</p>
+                    <h3>三、适用单位</h3>
+                    <p>城市规划及设计单位、建筑设计、开展城市科学研究的高校和科研院所、城市灾害防治部门。</p>
+                    <h3>四、产品功能</h3>
+                    <table class="table table-bordered table-hover">
+                        {#<thead>#}
+                        {#	<tr>#}
+                        {#	    <th>独立自主研发城市环境仿真模块</th>#}
+                        {#	</tr>#}
+                        {#</thead>#}
+                        <tbody>
+                        <tr>
+                            <td>1、绿色建筑规划设计数据支持、方案分析、建筑防风性能设计</td>
+                        </tr>
+                        <tr>
+                            <td>2、台风灾害预测、应急处置方案设计辅助</td>
+                        </tr>
+                        <tr>
+                            <td>3、风车田选址</td>
+                        </tr>
+                        <tr>
+                            <td>4、室外建筑风环境模拟，考虑绿化、地形对风速分布和建筑压力的分析计算</td>
+                        </tr>
+                        <tr>
+                            <td>5、室内空气流动模拟（温度、湿度、空气龄的计算）</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3>五、操作步骤 </h3>
+                    <table class="table table-bordered table-hover">
+                        <tbody>
+                        <tr>
+                            <th>建立模型</th>
+                            <td>提供建筑物三维模型图和地形图</td>
+                        </tr>
+                        <tr>
+                            <th>划分网格</th>
+                            <td>根据需要选粗、中、细三个等级网格并自动划分</td>
+                        </tr>
+                        <tr>
+                            <th>CFD设置</th>
+                            <td>输入少量边界条件数据，自动固化其它参数</td>
+                        </tr>
+                        <tr>
+                            <th>求解及后处理</th>
+                            <td>快速提供狂气流场压力、速度、矢量、流线图并自动生成报告</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <h3>六、简单示例 </h3>
+                    <p>几何模型</p>
+                    <img src="/static/img/city/wind/wind1.png" alt="几何模型"/>
+                    <p>计算网格</p>
+                    <img src="/static/img/city/wind/wind2.png" alt="计算网格"/>
+                    <p>仿真结果</p>
+                    <img src="/static/img/city/wind/wind3.png" alt="仿真结果"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
